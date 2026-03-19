@@ -1,16 +1,12 @@
 package Opgave2;
 
-import java.util.ArrayList;
-
 public class Main {
-    public static void main(String[] args){
-
-
-    }
-
-    public String getItem(ArrayList<String> items, int index) {
-        return items.get(index);
-
-
+    public static void main(String[] args) {
+        try {
+            Drink drink = new Drink();
+            drink.setPrice(-3.0);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Ugyldig: " + e.getMessage());
+        }
     }
 }
